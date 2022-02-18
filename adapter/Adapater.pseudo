@@ -1,0 +1,11 @@
+public class Adapter implements VideoPlug {
+
+    HDMIPlug hdmiPlug;
+    Adapter(HDMIPlug hdmiPlug) {
+        this.hdmiPlug = hdmiPlug;
+    }
+
+    public void display(int width, int height) {
+        this.hdmiPlug.digitalDisplay();
+    }
+}
